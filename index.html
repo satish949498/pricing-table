@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pricing table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <style>
+    body{
+      font-family: 'sono',sans-serif;
+    }
+    .container{
+      height: 100vh;
+      width: 100vw;
+      background-color: white;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+
+    }
+    .list{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 15px;
+      font-weight: normal;
+    }
+    .list li{
+       margin-bottom: 10px;
+       display: flex;
+       justify-content: center;
+       
+    }
+    .basic{
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: bold;
+     padding: 05px;
+    }
+    .plan{
+      display: flex;
+      justify-content: center;
+      font-size: 25px;
+      font-weight: bold;
+      padding: 5px;
+    }
+    .one{
+      height: 190px;
+      width: 250px;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #f2f2f2;  
+    }
+    .two{
+      height: 190px;
+      width: 250px;
+      border-radius: 5px;
+      padding: 10px;
+      background-color: #f2f2f2;
+  
+    }
+    .one:hover{
+      height: 220px;
+      width: 300px;
+      border-radius: 30px;
+      border: 3px solid black;
+    }
+    .two:hover{
+      height: 220px;
+      width: 300px;
+      border-radius: 30px;
+      border: 3px solid black;
+    }
+    .three:hover{
+      height: 220px;
+      width: 300px;
+      border-radius: 30px;
+      border: 3px solid black;
+    }
+    .three{
+      height: 190px;
+      width: 250px;
+      border-radius: 5px;
+      padding: 10px;
+      background-color: #f2f2f2;
+
+    }
+    .plain-button:hover{
+      height: 30px;
+      width: 120px;
+      padding: 5px;
+      border-radius: 10px;
+      background-color: #1cd854;
+      font-size:20px;
+    }
+    .plain-button{
+      padding: 5px;
+      background-color: #da650b;
+      color: #ffffff;
+      border-radius: 5px;
+      border: none;
+      margin-left: 100px;
+      display: flex;
+      justify-content: center;
+
+    }
+    .plain-button a{
+      color: #efefef;
+      text-decoration: none;
+    }
+    @media (max-width:900px){
+      .container{
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+  </style>
+  <div class="container">
+    <div class="one">
+      <div class="basic">basic</div>
+      <div class="plan">$11.99/month</div>
+      <ul class="list">
+        <li>✅ 10gb storage</li>
+        <li>✅ 1 user</li>
+        <li>🚫support</li>
+      </ul>
+      <button class="plain-button"><a href="goal-large.png">signin</a></button>
+    </div>
+    <div class="two">
+      <div class="basic">medium</div>
+      <div class="plan">$22.99/month</div>
+      <ul class="list">
+        <li>✅20gb storage</li>
+        <li>✅3 user</li>
+        <li>✅limited calls</li>
+      </ul>
+      <button class="plain-button"><a href="goal-large.png">signin</a></button>
+    </div>
+    <div class="three">
+      <div class="basic">Premium</div>
+      <div class="plan">$49.99/month</div>
+      <ul class="list">
+        <li>✅100gb storage</li>
+        <li>✅5 user</li>
+        <li>✅24/7 support</li>
+      </ul>
+      <button class="plain-button"><a href="goal-large.png">signin</a></button>
+    </div>
+
+  </div>
+</body>
+</html>
